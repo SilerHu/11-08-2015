@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projecting Exome Capture SNPs to your panel</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <p>Descriptions:  We applied two approaches, Random Forest (randomForest,
+
+http://cran.r-project.org/web/packages/randomForest/index.html) and MACH (v1), to
+
+test the imputation accuracy for missing values in our association mapping panel. First
+
+we constructed a genotyping dataset contained 2758 SNPs selected from the 92K
+
+iSelect genotyping assay, including 1207 mapped to 3A and 1551 mapped to 3B. From
+
+this dataset, different level of missing values (NA20, NA30, NA40, NA50, NA60) were
+
+then simulated by random picking of genotyped values to be set as un-genotyped. A
+
+total of 10 datasets for each level of missing were generated.  The imputed genotypes
+
+were then compare to the original genotypes to infer the accuracy of imputation.</p>
+    </div>
+
+    <div class="inputFile">
+        <form>
+
+            <div class="message">
+            <p>
+                You can give a discription below here:<br>
+                <input type="text" name="textline" size="40">
+            </p>
+            </div>
+
+            <div class="fileUpload">
+            <p>
+                Please select a genotyping file, we will email you the status of the jobs<br>
+                <input type="file" accept=".hapmap,.VCF" name="datafile" size="40">
+            </p>
+            </div>
+
+            <div class="email">
+            <p>
+                Please your email address here:<br>
+                <input type="text" name="textline" size="40">
+            </p>
+            </div>
+
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
